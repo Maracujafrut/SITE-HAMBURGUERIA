@@ -1,45 +1,31 @@
-.img-menu {
+.navbar-nav {
+    justify-content: center; /* Centraliza os itens */
+    flex-grow: 1; /* Permite que a navbar use todo o espaço disponível */
+  }
 
-    width: 110px;
-    height: 100px;
-    position: relative; /* Ou absolute, dependendo do seu layout */
-    top: -5px; /* Ajusta a distância do topo */
-    left: -4px; /* Ajusta a distância da esquerda */
+
+/*  CARROSSEL */
+.carousel-indicators li {
+    width: 12px !important;
+    height: 12px !important;
+    border-radius: 50% !important;
+    background-color: #fff !important;
+    opacity: 0.5 !important;
+    transition: opacity 0.6s !important;
 }
 
-.rounded-btn {
-    border-radius: 50%; /* Torna o botão redondo */
-    width: 60px; /* Ajuste a largura conforme necessário */
-    height: 60px; /* Ajuste a altura conforme necessário */
-    padding: 0 0 0 0; /* Remove padding */
-
-    border: none; /* Remove a borda, se necessário */
+.carousel-indicators .active {
+    opacity: 1 !important;
 }
 
-.navbar-toggler-icon {
-    background-color: #000; /* Cor do ícone, ajuste conforme necessário */
+#carouselExampleIndicators{
+    position: relative;
+    top: -100px;
 }
 
-body {
-    margin: 0;
-    font-family: 'Times New Roman', Times, serif;
+.logo-img {
+    width: 100px;
+    padding-top: 0px;
+    position:relative;
+    top: -50px;
 }
-
-#video-background {
-    position: fixed; /* Fixa o vídeo na tela */
-    top: 0;
-    left: 0;
-    width: 100%; /* Preenche a tela toda */
-    height: 100%; /* Preenche a tela toda */
-    object-fit: cover; /* Corta o vídeo para cobrir a tela */
-    z-index: -1; /* Coloca o vídeo atrás do conteúdo */
-}
-
-.content {
-    position: relative; /* Para posicionar o conteúdo acima do vídeo */
-    z-index: 1; /* Garante que o conteúdo fique acima do vídeo */
-    color: white; /* Ajusta a cor do texto se necessário */
-    padding: 20px; /* Espaçamento */
-}
-
-img src="IMAGENS/HAMBRUGUER-removebg-preview.png" class="img-menu"></span>
