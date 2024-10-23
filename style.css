@@ -1,0 +1,45 @@
+.img-menu {
+
+    width: 110px;
+    height: 100px;
+    position: relative; /* Ou absolute, dependendo do seu layout */
+    top: -5px; /* Ajusta a distância do topo */
+    left: -4px; /* Ajusta a distância da esquerda */
+}
+
+.rounded-btn {
+    border-radius: 50%; /* Torna o botão redondo */
+    width: 60px; /* Ajuste a largura conforme necessário */
+    height: 60px; /* Ajuste a altura conforme necessário */
+    padding: 0 0 0 0; /* Remove padding */
+
+    border: none; /* Remove a borda, se necessário */
+}
+
+.navbar-toggler-icon {
+    background-color: #000; /* Cor do ícone, ajuste conforme necessário */
+}
+
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#video-background {
+    position: fixed; /* Fixa o vídeo na tela */
+    top: 0;
+    left: 0;
+    width: 100%; /* Preenche a tela toda */
+    height: 100%; /* Preenche a tela toda */
+    object-fit: cover; /* Corta o vídeo para cobrir a tela */
+    z-index: -1; /* Coloca o vídeo atrás do conteúdo */
+}
+
+.content {
+    position: relative; /* Para posicionar o conteúdo acima do vídeo */
+    z-index: 1; /* Garante que o conteúdo fique acima do vídeo */
+    color: white; /* Ajusta a cor do texto se necessário */
+    padding: 20px; /* Espaçamento */
+}
+
+img src="IMAGENS/HAMBRUGUER-removebg-preview.png" class="img-menu"></span>
