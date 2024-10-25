@@ -1,7 +1,41 @@
+body{
+    background-color:#582414;
+}
+
 .navbar-nav {
     justify-content: center; /* Centraliza os itens */
     flex-grow: 1; /* Permite que a navbar use todo o espaço disponível */
   }
+
+  /* Altera a fonte da navbar */
+  .navbar-nav .nav-link {
+    font-family: 'Bree Serif', sans-serif; /* Fonte personalizada */
+    font-size: 25px; /* Tamanho da fonte */
+    margin: 0 20px; /* Espaçamento horizontal entre os itens */
+    font-style: normal; /* Remove o itálico */
+    }
+
+/* Estilo para a navbar */
+.navbar {
+    padding: 15px 0; /* Espaçamento vertical da navbar */
+    position: relative;
+    top: -24px;
+}
+
+/* Estilo adicional para o item ativo */
+.nav-item.active .nav-link {
+    font-weight: bold; /* Destaca o item ativo */
+    color: white; /* Cor do texto do item ativo */
+}
+
+/* Estilo para o link desativado */
+.nav-item .disabled {
+    color: rgba(255, 255, 255, 0.5); /* Cor para o link desativado */
+}
+
+.header-image {
+
+}
 
 
 /*  CARROSSEL */
@@ -9,9 +43,11 @@
     width: 12px !important;
     height: 12px !important;
     border-radius: 50% !important;
-    background-color: #fff !important;
+    background-color: #ffffff !important;
     opacity: 0.5 !important;
     transition: opacity 0.6s !important;
+    position: relative;
+    top: -270px;
 }
 
 .carousel-indicators .active {
@@ -20,12 +56,102 @@
 
 #carouselExampleIndicators{
     position: relative;
-    top: -100px;
+    top: -30px;
 }
 
 .logo-img {
-    width: 100px;
+    width: 200px;
     padding-top: 0px;
     position:relative;
-    top: -50px;
+    top: -1000px;
+    left: 230px;
+}
+
+.navbar-nav {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding:0 20px
+}
+
+/* SETAS DO CARROSSEL */
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: 100% 100%; /* Ajusta o tamanho da imagem */
+  position: relative;
+  top: -150px;
+  width: 40px;
+  height: 50px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  height: 100%; /* Faz com que as setas ocupem a altura total do carrossel */
+  top: 0; /* Garante que a seta fique alinhada corretamente */
+  width: 50px; /* Altera a largura do espaço clicável */
+}
+
+.carousel-control-prev-icon {
+    position: relative;
+    left: 60px;
+}
+
+.carousel-control-next-icon {
+    position: relative;
+    right: 60px;
+}
+
+.carousel-control-prev-icon {
+    background-image: url('IMAGENS/proximoDIREITA.png');
+    transform: rotate(180deg);
+    background-size: 70px;
+}
+
+.carousel-control-next-icon {
+    background-image: url('IMAGENS/proximoDIREITA.png');
+    background-size: 70px;
+
+}
+ 
+/* Estilos para as setas de navegação */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: brightness(1); /* Brilho normal */
+    transition: filter 0.3s ease; /* Suave transição ao clarear */
+}
+
+ /* Ao passar o mouse, aumentar o brilho */
+ .carousel-control-prev-icon:hover,
+ .carousel-control-next-icon:hover {
+     filter: brightness(6); /* Aumentar o brilho para 200% ao passar o mouse */
+ }
+
+ /* Estilo para o botão clicado */
+ .carousel-control-prev-icon.active,
+ .carousel-control-next-icon.active {
+     filter: brightness(2); /* Clarear a seta (200% de brilho) */
+ }
+
+ /* Estilo específico para o segundo carrossel */
+.editable-carousel .carousel-inner {
+    background-color:; /* Exemplo de fundo */
+    position: relative;
+    top: -230px;
+}
+
+.editable-carousel .carousel-item img {
+    opacity: 0.8; /* Exemplo de transparência */
+}
+
+.editable-carousel .carousel-control-next-icon,
+.editable-carousel .carousel-control-prev-icon {
+   
+}
+
+.logobaixo{
+    position: relative;
+    left: 850px;
+    top: -230PX;
+    width: 150px;
 }
