@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápios</title>
+    <link rel="stylesheet" href="Cardápio.css">
+    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+</head>
+
+<!-- CABEÇALHO -->
+<body>
+    <a class="navbar-brand" href="#"></a>
+    <nav class="navbarhead navbar-expand-lg navbar-light" style="background-color: #502314;">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Início <span class="sr-only">(Página atual)</span></a>
+                </li>
+                <li class="nav-item text-center mx-auto">
+                    <span class="navbar-text">Cardápio</span>
+                </li>
+            </ul>
+        </div>
+    </nav>      
+    
+
+</body>
+
+<div class="menu" id="hamburguer-menu">
+    <h2>Hambúrgueres</h2>
+    <div class="item">
+        <img src="IMAGENSCARDÁPIO/whopper-duplo-thumb.png" alt="Nome do Hamburguer 1">
+        <h3>DELPHINE</h3>
+        <p class="description">Pão, 2 Bifes, Alface, Tomate, Cebola, Picles.</p>
+        <p class="price">R$ 20,00</p>
+        <div class="buttons">
+            <button onclick="adicionarSacola('DELPHINE')">Adicionar à Sacola</button>
+            <button onclick="comprar('DELPHINE')">Comprar</button>
+        </div>
+    </div>
+    <div class="item">
+        <img src="IMAGENSCARDÁPIO/maga-stacker-atomico-2-thumb (1).png" alt="Nome do Hamburguer 2">
+        <h3>MEGA WHITE</h3>
+        <p class="description">Descrição do Hamburguer 2.</p>
+        <p class="price">R$ 25,00</p>
+        <div class="buttons">
+            <button onclick="adicionarSacola('MEGA WHITE')">Adicionar à Sacola</button>
+            <button onclick="comprar('MEGA WHITE')">Comprar</button>
+        </div>
+    </div>
+    <div class="item">
+        <img src="IMAGENSCARDÁPIO/maga-stacker-cheddar-2-thumb.png" alt="Nome do Hamburguer 3">
+        <h3>DUPLO SANCHES</h3>
+        <p class="description">Pão, 2 Bifes, Queijo Cheddar, Bacon.</p>
+        <p class="price">R$ 22,00</p>
+        <div class="buttons">
+            <button onclick="adicionarSacola('DUPLO SANCHEZ')">Adicionar à Sacola</button>
+            <button onclick="comprar('DUPLO SANCHEZ')">Comprar</button>
+        </div>
+    </div>
+    <div class="item">
+        <img src="IMAGENSCARDÁPIO/The-King_King-Costela_Externa_Novo.png" alt="Nome do Hamburguer 4">
+        <h3>BIG TED</h3>
+        <p class="description">Bife, Bacon, Anéis de cebola, Molho Especial.</p>
+        <p class="price">R$ 28,00</p>
+        <div class="buttons">
+            <button onclick="adicionarSacola('BIG TED')">Adicionar à Sacola</button>
+            <button onclick="comprar('BIG TED')">Comprar</button>
+        </div>
+    </div>
+    <div class="item">
+        <img src="IMAGENSCARDÁPIO/kids-burger-thumb.png" alt="Nome do Hamburguer 5">
+        <h3>KID BURGUER</h3>
+        <p class="description">Pão, Bife e Queijo e um brinquedo.</p>
+        <p class="price">R$ 22,00</p>
+        <div class="buttons">
+            <button onclick="adicionarSacola('DUPLO SANCHEZ')">Adicionar à Sacola</button>
+            <button onclick="comprar('DUPLO SANCHEZ')">Comprar</button>
+        </div>
+    </div>
+</div>
+
+<div class="menu" id="acompanhamentos-menu">
+    <h2>Acompanhamentos</h2>
+    <div class="item" id="acomp1">
+        <img src="caminho/para/acompanhamento1.jpg" alt="Nome do Acompanhamento 1">
+        <h3>Nome do Acompanhamento 1</h3>
+        <p class="description">Descrição do Acompanhamento 1.</p>
+        <p class="price">R$ 8,00</p>
+        <div class="buttons">
+            <button onclick="adicionarSacola('Nome do Acompanhamento 1')">Adicionar à Sacola</button>
+            <button onclick="comprar('Nome do Acompanhamento 1')">Comprar</button>
+        </div>
+    </div>
+    <div class="item" id="acomp2">
+        <img src="caminho/para/acompanhamento2.jpg" alt="Nome do Acompanhamento 2">
+        <h3>Nome do Acompanhamento 2</h3>
+        <p class="description">Descrição do Acompanhamento 2.</p>
+        <p class="price">R$ 10,00</p>
+        <div class="buttons">
+            <button onclick="adicionarSacola('Nome do Acompanhamento 2')">Adicionar à Sacola</button>
+            <button onclick="comprar('Nome do Acompanhamento 2')">Comprar</button>
+        </div>
+    </div>
+</div>
+
+<div class="menu" id="sobremesas-menu">
+    <h2>Sobremesas</h2>
+    <div class="item" id="sobremesa1">
+        <img src="IMAGENSCARDÁPIO/Nova-Embalagem_Shake-Chocolate_Externa.png" alt="Nome da Sobremesa 1">
+        <h2>SHAKE DE CHOCOLATE</h2>
+        <p class="description">Leite com sorvete de chocolate.</p>
+        <p class="price">R$ 12,00</p>
+        <div class="buttons">
+            <button onclick="adicionarSacola('Nome da Sobremesa 1')">Adicionar à Sacola</button>
+            <button onclick="comprar('Nome da Sobremesa 1')">Comprar</button>
+        </div>
+    </div>
+    <div class="item" id="sobremesa2">
+        <img src="IMAGENSCARDÁPIO/Nova-Embalagem_Shake-Baunilha_Externa.png" alt="Nome da Sobremesa 2">
+        <h2>SHAKE DE BAUNILHA</h2>
+        <p class="description">Leite com sorvete de Baunilha.</p>
+        <p class="price">R$ 12,00</p>
+        <div class="buttons">
+            <button onclick="adicionarSacola('Nome da Sobremesa 2')">Adicionar à Sacola</button>
+            <button onclick="comprar('Nome da Sobremesa 2')">Comprar</button>
+        </div>
+    </div>
+    <div class="item" id="sobremesa3">
+        <img src="IMAGENSCARDÁPIO/Nova-Embalagem_Shake-Morango_Externa.png" alt="Nome da Sobremesa 3">
+        <h2>SHAKE DE MORANGO</h2>
+        <p class="description">Leite com sorvete de Morango.</p>
+        <p class="price">R$ 12,00</p>
+        <div class="buttons">
+            <button onclick="adicionarSacola('Nome da Sobremesa 3')">Adicionar à Sacola</button>
+            <button onclick="comprar('Nome da Sobremesa 3')">Comprar</button>
+        </div>
+    </div>
+    <div class="item" id="sobremesa4">
+        <img src="IMAGENSCARDÁPIO/BK-Mix-Ovomaltine-thumb.png" alt="Nome da Sobremesa 4">
+        <h2>SORVETE NO POTE</h2>
+        <p class="description">Leite com sorvete de Morango.</p>
+        <p class="price">R$ 12,00</p>
+        <div class="buttons">
+            <button onclick="adicionarSacola('Nome da Sobremesa 4')">Adicionar à Sacola</button>
+            <button onclick="comprar('Nome da Sobremesa 4')">Comprar</button>
+        </div>
+    </div>
+    <div class="item" id="sobremesa5">
+        <img src="IMAGENSCARDÁPIO/Casquinha-Mista-thumb.png" alt="Nome da Sobremesa 5">
+        <h2>CASQUINHA</h2>
+        <p class="description">Leite com sorvete de Morango.</p>
+        <p class="price">R$ 12,00</p>
+        <div class="buttons">
+            <button onclick="adicionarSacola('Nome da Sobremesa 5')">Adicionar à Sacola</button>
+            <button onclick="comprar('Nome da Sobremesa 5')">Comprar</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,220 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0; /* Removido para que a navbar ocupe todo o topo */
+    text-align: center;
+    background-color: #ccc ;
+    background-size: 2200px 1700px; /* largura x altura */
+    
+}
+
+.seu-seletor {
+    background-image: url('caminho/para/sua/imagem.jpg');
+    background-size: 300px 200px; /* largura x altura */
+}
+
+header {
+    background-color: #582414; /* Cor do cabeçalho */
+    color: white; /* Cor do texto */
+    padding: 10px;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Ocupa toda a largura */
+}
+
+.navbar h1 {
+    margin: 0;
+    flex: 1; /* Centraliza o título */
+    text-align: center;
+}
+
+.home-button {
+    background: none; /* Sem fundo */
+    border: none; /* Sem borda */
+    color: white; /* Cor do texto */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer;
+    margin-right: 20px; /* Espaço à direita do botão */
+    outline: none; /* Sem contorno ao clicar */
+}
+
+.home-button:hover {
+    background: none; /* Sem fundo ao passar o mouse */
+    color: white; /* Mantém a cor do texto */
+    cursor: pointer; /* Mantém o cursor como ponteiro */
+}
+
+.cart {
+    display: flex;
+    align-items: center;
+}
+
+.cart-icon {
+    font-size: 1.5em;
+    margin-right: 5px;
+}
+
+.cart-count {
+    font-weight: bold;
+}
+
+.menu .item h3 {
+    text-align: center;
+    font-size: 28px; /* Ajuste o tamanho conforme necessário */
+    white-space: nowrap; /* Impede a quebra de linha */
+}
+
+.menu .item h2{
+    text-align: center;
+    font-size: 20px; /* Ajuste o tamanho conforme necessário */
+    white-space: nowrap; /* Impede a quebra de linha */
+}
+
+
+.menu .item .description {
+    text-align: center;
+}
+
+.menu {
+    margin-bottom: 40px;
+}
+
+.menu .item .price{
+    position: relative;
+    left: 50px;
+}
+
+.item {
+    border: 2px solid #ccc; /* Aumentando a largura da borda */
+    background-color: #ad9b9b;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    width: 200px; /* Ajuste a largura conforme necessário */
+    height:450px; /* Altura fixa */
+    vertical-align: top;
+    text-align: left; /* Alinhamento do texto à esquerda */
+    font-family: 'Bree Serif', sans-serif;
+    border: 2px solid #ad9b9b; Border-radius: 15px; padding: 20px;
+}
+
+.item img {
+    max-width: 100%;
+    height: 140px; /* Altura fixa para as imagens */
+    object-fit: cover; /* Faz a imagem cobrir a área sem distorção */
+}
+
+
+.buttons {
+    display: block; /* Exibir como bloco para os botões ficarem um embaixo do outro */
+}
+
+.buttons button {
+    width: 100%; /* Faz com que os botões ocupem 100% da largura do contêiner */
+    padding: 10px;
+    background-color: #502314; /* Cor azul */
+    color: white; /* Cor do texto */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer;
+    font-size: 16px; /* Tamanho da fonte */
+    outline: none; /* Remove o contorno */
+    box-shadow: 0px 4px 8px rgba(30, 144, 255, 0.4); /* Sombra suave */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transições */
+    margin-bottom: 10px; /* Espaçamento entre os botões */
+    position: relative;
+    top: 20px;
+}
+
+.buttons button:hover {
+    background-color: #3f2206; /* Cor azul mais escura ao passar o mouse */
+    box-shadow: 0px 6px 12px rgba(30, 144, 255, 0.6); /* Sombra mais forte ao passar o mouse */
+}
+
+.buttons button:active {
+    background-color: #187bcd; /* Cor azul escuro ao clicar */
+    box-shadow: 0px 2px 4px rgba(30, 144, 255, 0.3); /* Sombra menor ao clicar */
+}
+button:focus {
+    outline: none; /* Remove o contorno quando o botão está em foco */
+}
+
+button:hover {
+    color: #109010; /* Cor do texto ao passar o mouse */
+    border: none;
+}
+
+.hamburguer-description {
+    font-size: 18px; /* Aumentando o tamanho da fonte da descrição */
+    margin-top: 10px; /* Espaçamento acima da descrição */
+}
+
+.navbar{
+    position: relative; 
+    top: -23px;
+    height: 85px;
+}
+
+.nav-link{
+    position: relative;
+    left: -780px;
+    font-family: 'Bree Serif', sans-serif;
+    font-size: 25px;
+    bottom: -20px;
+}
+
+.navbar-text{
+    font-family: 'Bree Serif', sans-serif;
+    font-size: 50px;
+    position: relative;
+    left: -45px;
+    top: -5px;
+}
+
+.sanches{
+    font-size: 23.2px;
+}
+
+.desc4{
+    font-size: 15px;
+}
+
+.buttons{
+    position: relative;
+    top: -15px ;
+}
+
+.price{
+    position: relative;
+    left: 40PX;
+    font-size: 20PX;
+}
+
+.shakedisc{
+    font-size: 12px;
+}
+
+.pricee{
+    position: relative;
+    top: -9px;
+    left: 40px;
+    font-size: 20px;
+}
+
+.navbarhead{
+    position: relative;
+    top: -25px;
+}
+
+.kidburguer{
+    font-size: 21px;
+}
+
+.buttonst{
+    position: relative;
+    top: 16px;
+}

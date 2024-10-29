@@ -34,6 +34,7 @@ body{
 }
 
 .header-image {
+    width: 1864px;
 
 }
 
@@ -63,7 +64,7 @@ body{
     width: 200px;
     padding-top: 0px;
     position:relative;
-    top: -1000px;
+    top: -1013px;
     left: 230px;
 }
 
@@ -135,7 +136,6 @@ body{
 
  /* Estilo específico para o segundo carrossel */
 .editable-carousel .carousel-inner {
-    background-color:; /* Exemplo de fundo */
     position: relative;
     top: -230px;
 }
@@ -151,7 +151,113 @@ body{
 
 .logobaixo{
     position: relative;
-    left: 850px;
-    top: -230PX;
-    width: 150px;
+    left: 820px;
+    top: -220PX;
+    width: 200px;
 }
+button{
+    background-color: transparent;
+}
+
+/* Container para organizar os botões */
+.button-wrapper {
+    position: relative;
+    top: -200px;
+    display: flex;                   /* Alinha os botões lado a lado */
+    gap: 10px;                       /* Espaço ajustável entre os botões */
+    justify-content: center;         /* Centraliza os botões horizontalmente */
+    left: 50px   ;  
+    width:1810px;
+    
+}
+
+  /* Estilo dos botões */
+  .button-container,
+  .button-container2,
+  .button-container3,
+  .button-container4 {
+    background: none;                /* Remove o fundo */
+    border: none;                    /* Remove a borda */
+    box-shadow: none;                /* Remove a sombra */
+    color: inherit;                  /* Herdar a cor do texto */
+    outline: none;                   /* Remove a marcação de foco */
+    cursor: pointer;                 /* Cursor de botão */
+    font-family: "Bree Serif", sans-serif; /* Fonte ajustável */
+    font-size: 30px;                 /* Tamanho da fonte ajustável */
+    color: #F5EBDC;
+    padding: 0;                      /* Remove o preenchimento */
+    margin: 0;                       /* Remove a margem */
+  }
+
+.button-container,
+.button-container2,
+.button-container3,
+.button-container4 {
+
+  padding: 10px 20px;              /* Aumenta a área clicável ao redor do texto */
+  margin: 0;                       /* Remove a margem */
+  display: inline-block;           /* Garante que o botão seja dimensionado corretamente */
+}
+  
+
+.button-container:focus {
+  outline: none;                   /* Remove o contorno no foco */
+  border-bottom: 2px solid #F5EBDC; /* Exibe uma linha inferior embaixo do texto */
+}
+
+.linha{
+    position: relative;
+    top: -200px;
+    left: 25px;
+}
+
+.button-container {
+    display: flex;                  /* Alinha os botões lado a lado */
+    justify-content: center;        /* Centraliza os botões horizontalmente */
+    gap: 50px;                      /* Espaçamento ajustável entre os botões */
+  }
+  
+  .image-button img {
+    width: 50px;                   /* Ajusta a largura da imagem (ajustável) */
+    height: auto;                   /* Mantém a proporção da imagem */
+    cursor: pointer;                /* Altera o cursor para indicar que é clicável */
+    border: none;                   /* Remove qualquer borda, se houver */
+    position: relative;
+    top: -200px;
+    left: -30px;
+  }
+  
+  .image-button {
+    text-decoration: none;           /* Remove o sublinhado do link */
+  }
+
+  .linha-wrapper {
+    position: relative; /* Para posicionar o texto sobre a linha */
+  }
+  
+  .linha {
+    display: block; /* Faz com que a imagem da linha ocupe toda a largura */
+  }
+  
+  .linha-text {
+    position: relative; /* Permite posicionar o texto sobre a imagem da linha */
+    top: -210px; /* Centraliza verticalmente */
+    left: 745px; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta a posição para centralização */
+    font-family: 'Bree Serif', sans-serif; /* Altere para a fonte desejada */
+    font-size: 23px; /* Tamanho da fonte */
+    color: #F5EBDC; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+  }
+
+  .linha-textt {
+    position: relative; /* Permite posicionar o texto sobre a imagem da linha */
+    top: -80px; /* Centraliza verticalmente */
+    left: 530px; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta a posição para centralização */
+    font-family: 'Bree Serif', sans-serif; /* Altere para a fonte desejada */
+    font-size: 24px; /* Tamanho da fonte */
+    color: #F5EBDC; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+  }
+  
